@@ -1,0 +1,10 @@
+{% extends 'users/base.html' %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<h2>Welcome, {{ user.username }}!</h2>
+<p>This is your dashboard.</p>
+<ul>
+    <li><a href="/users/frontcars/">View My Cars</a></li>
+    <li><a href="/users/logout/">Logout</a></li>
+</ul>
+{% endblock %}

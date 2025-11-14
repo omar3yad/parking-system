@@ -1,0 +1,13 @@
+{% extends 'users/base.html' %}
+{% block title %}My Cars{% endblock %}
+{% block content %}
+<h2>My Cars</h2>
+<ul>
+    {% for car in cars %}
+        <li>{{ car.plate_number }} - {{ car.model }}</li>
+    {% empty %}
+        <li>No cars found.</li>
+    {% endfor %}
+</ul>
+<a href="/users/dashboard/">Back to Dashboard</a>
+{% endblock %}

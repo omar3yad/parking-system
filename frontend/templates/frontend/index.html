@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خريطة الجراج الذكية</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">خريطة الجراج الذكية</h1>
+            <div class="dashboard">
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-label">إجمالي الأماكن:</span>
+                        <span class="stat-value" id="totalSlots">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">متاحة:</span>
+                        <span class="stat-value" id="availableSlots">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">مشغولة:</span>
+                        <span class="stat-value" id="occupiedSlots">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">محجوزة:</span>
+                        <span class="stat-value" id="reservedSlots">0</span>
+                    </div>
+                </div>
+                <div class="legend">
+                    <div class="legend-item">
+                        <span class="color available"></span>
+                        <span class="label">متاح</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="color occupied"></span>
+                        <span class="label">مشغول</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="color reserved"></span>
+                        <span class="label">محجوز</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="color maintenance"></span>
+                        <span class="label">صيانة</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="parking-lot">
+                <div class="road">
+                    <div class="road-line"></div>
+                </div>
+                <div class="parking-map" id="parkingMap">
+                    <!-- سيتم تعبئة أماكن الوقوف هنا بالجافاسكريبت -->
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p class="last-update">آخر تحديث: <span id="lastUpdate">--:--:--</span></p>
+        </footer>
+    </div>
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
