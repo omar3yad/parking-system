@@ -1,3 +1,7 @@
+<table>
+<tr>
+<td width="60%">
+
 # Smart Parking System
 
 A complete Parking Management System supporting:  
@@ -7,6 +11,15 @@ A complete Parking Management System supporting:
 - Payment recording  
 - Car detection using OCR cameras  
 - Dashboard for admin and user monitoring  
+
+</td>
+<td width="40%">
+
+<img src="https://github.com/user-attachments/assets/faa886e6-d7b6-4e12-8afb-a5c60becf08e" alt="Smart Parking System" width="100%">
+
+</td>
+</tr>
+</table>
 
 ---
 
